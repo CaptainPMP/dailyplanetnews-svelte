@@ -4,8 +4,7 @@
   import Counter from './lib/Counter.svelte'
   import {onMount} from 'svelte'
 
-  const API_KEY = "1ef56a012a4d4a089709941a6a706afc";
-  const URL = `https://newsapi.org/v2/everything?q=comics&sortBy=publishedAt&apiKey=${API_KEY}`
+  const URL = `https://saurav.tech/NewsAPI/everything/cnn.json`
   let articles = []
   onMount(async function() {
     const res = await fetch(URL);
